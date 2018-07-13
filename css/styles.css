@@ -1,0 +1,13 @@
+body{
+    background-image:url("../images/background2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 1000%;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 37px;
+}
+hr{
+    width: 50%;
+    height:50%;
+}
