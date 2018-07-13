@@ -57,26 +57,27 @@ consoleText(["Welcome.", "Lets Play", "PingPong"], "text", [
         var userInput=$("#input1").val();
         var input= parseInt(userInput);
         me(input);
-        web.forEach(function(input){
-            $("#result").append("<li>" +input +"</li>");
+        webs.forEach(function(web){
+            $("#result").append("<li>" +web +"</li>");
             });
     });
 });
 
-var web=[];
-function me(input){
-    for(index=1; index<= input; index++){
+var webs=[];
+var index;
+function me(y){
+    for(index=1; index<= y; index++){
         if (index % 15 ===0){
-            web.push("Ping-Pong");
+            webs.push("Ping-Pong");
         }
         else if (index % 3 === 0){
-            web.push("Ping");
+            webs.push("Ping");
         }
         else if (index % 5 === 0){
-            web.push("Pong");
+            webs.push("Pong");
         }
-        else;{
-            web.push(index)
+        else{
+            webs.push(index);
         }
     }
 }
