@@ -1,7 +1,6 @@
-// function([string1, string2],target id,[color1,color2])
 consoleText(["Welcome.", "Lets Play", "PingPong"], "text", [
-    "white",
-    "#0CF552  ",
+    "#20E79E",
+    "#20E7CE",
     "aqua"
   ]);
   

@@ -33,7 +33,7 @@ body {
   opacity: 0;
 }
 .console-container {
-  font-family: Khula;
+    font-family: 'Yesteryear', cursive;
   font-size: 4em;
   text-align: center;
   height: 80px;
@@ -43,13 +43,12 @@ body {
   color: white;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 0px;
   right: 0;
- margin: 100px;
+ margin: 440px;
 }
 .console-underscore {
   display: inline-block;
-  
-  top: -0.14em;
+
   left: 10px;
 }
