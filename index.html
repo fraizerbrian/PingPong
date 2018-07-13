@@ -9,28 +9,41 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 </head>
 <body>
-    <div id="header">
-        <h1>Ping-Pong</h1>
+    <!--<div id="header">
+        <h1 style="color:aqua">Ping-Pong</h1>
         <hr>
-    </div>
+    </div>-->
+
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
     <div class="about">
         <div class="col-md-4 sidebar">
-            <h2>About Ping Pong</h2>
-            <hr>
+            
             <h3>Created by:</h3>
             <p style="color:#ca7575">Fraizer Kilonzo</p>
             <h3>Github Username:</h3>
             <p style="color:aqua">fraizerbrian</p>
+            <hr>
+            <h2 style="color:aqua">About Ping Pong</h2>
+            <hr>
             <p>This is a very interesting game that lets you use your wits to find out if a number is either divisible by 3 or by 5.</p>
             <p>If a number is divisible by 3, <strong>"Ping"</strong> will be displayed, if it is divisible by 5,<strong>"Pong"</strong> will be displayed. If its divisible by both,<strong>"Ping-Pong"</strong>will be displayed, else, the number you input will be displayed to signify that its neither divisible by 3 nor 5 </p>
             <p>Enjoy the Game even as you play it!!</p>
         </div>
     </div>
+
     <hr>
+
+    <div>
+        <h2 style="color:aqua">Player Info</h2>
+    </div>
+
+    <hr>
+
     <div class="play">
-        <h2>LETS PLAY NOW!!!</h2>
+        <h2 style="color:aqua">LETS PLAY NOW!!!</h2>
         <hr>
-        <h4>Rules:</h4>
+        <h4 style="color:aqua">Rules:</h4>
         <hr>
         <p>Ping-Pong will count your number from 1 with the following exceptions</p>
         <ol>
@@ -44,8 +57,12 @@
             <label class="form-check-label" for="input">Enter A Number Of Your Choice</label>
             <input type="text" id="input1">
         </div class="contain">
-        <button type="submit" id="play">PLAY!</button>
+        <div class="container">
+        <button type="submit" id="play" class="btn">PLAY!</button>
+        </div>
     </form>
+    </div>
+
     <div>
     </div>
 
