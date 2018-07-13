@@ -6,7 +6,6 @@
     <title>PingPong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
 </head>
@@ -35,27 +34,11 @@
 
     <hr>
 
-    <div>
-        <h2 style="color:aqua">Player Info</h2>
-        <form action="/action_page.php" style="margin:auto">
-            <div class="input-container">
-                <i class="fa fa-user icon"></i>
-                <input class="input-field" type="text" placeholder="username" name="usrnm">
-            </div>
-            <div class="input-container">
-                <i class="fa fa-envelope icon"></i>
-                <input class="input-field" type="text" placeholder="Email" name="email">
-            </div>
-            <button type="submit" class="btn" href="#">Register</button>
-            
-    </div>
-
-    <hr>
-
     <div class="play">
         <h2 style="color:aqua">LETS PLAY NOW!!!</h2>
         <hr>
         <h4 style="color:aqua">Rules:</h4>
+        <hr>
         <p>Ping-Pong will count your number from 1 with the following exceptions</p>
         <ol>
             <li>Numbers divisible by 3 become "Ping"</li>
@@ -71,13 +54,13 @@
         <div class="container">
         <button type="submit" id="play" class="btn">PLAY!</button>
         </div>
-        <div id="result"></div>
+        <ul id="result">
+
+        </ul>
     </form>
     </div>
 
-    <div>
-    </div>
-
+    
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>

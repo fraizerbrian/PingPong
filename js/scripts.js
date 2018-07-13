@@ -51,30 +51,32 @@ consoleText(["Welcome.", "Lets Play", "PingPong"], "text", [
     }, 400);
   }
   
-
-$(document).ready(function() {
-    $("form#pingpong").submit(function(event) {
+  $(document).ready(function() {
+    $("form").click(function(event) {
         event.preventDefault();
-        var number = parseInt($("#input1").val());
-        var result = numbers(number);
-        // $("#result").text(result);
-        //numbers.forEach(function(number) {
-        $("#result").append("<li>" + number + "</li>");      
-        //});
+        var userInput=$("#input1").val();
+        var input= parseInt(userInput);
+        me(input);
+        web.forEach(function(input){
+            $("#result").append("<li>" +input +"</li>");
+            });
     });
- });
-     var numbers = function(number) {
-            if((number % 3 ===0) && (number % 5 === 0)) {
-                 return "pingpong";
-            }
-            else if ((number%5)===0) {
-                return "pong";
-            }
-             else if ((number % 3) === 0) {
-                 return "ping";
-            
-            }
-            else {
-                return number;
-            }
-    };
+});
+
+var web=[];
+function me(input){
+    for(index=1; index<= input; index++){
+        if (index % 15 ===0){
+            web.push("Ping-Pong");
+        }
+        else if (index % 3 === 0){
+            web.push("Ping");
+        }
+        else if (index % 5 === 0){
+            web.push("Pong");
+        }
+        else;{
+            web.push(index)
+        }
+    }
+}
